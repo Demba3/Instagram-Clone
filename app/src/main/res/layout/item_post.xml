@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demba"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icLike"
+            android:layout_width="52dp"
+            android:layout_height="34dp"
+            android:maxWidth="2dp"
+            android:src="@drawable/ufi_heart" />
+
+        <ImageView
+            android:id="@+id/icComment"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/icLike"
+            android:maxWidth="2dp"
+            android:src="@drawable/ufi_comment" />
+
+        <ImageView
+            android:id="@+id/icShare"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/icComment"
+            android:maxWidth="2dp"
+            android:src="@drawable/nav_inbox_paper_plane" />
+
+        <ImageView
+            android:id="@+id/icSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxWidth="2dp"
+            android:src="@drawable/ufi_save_active" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is the description"
+        android:id="@+id/tvDescription"
+        />
+
+</LinearLayout>
